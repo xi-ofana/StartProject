@@ -15,7 +15,8 @@
       <header>
           
               <div class="navbar navbar-expand-lg d-flex justify-content-around" role="navigation">
-                  <ul class="nav mx-auto">
+                  <ul class="nav justify-content-xl-around">
+                    
                         <button onclick="document.locaction='#index.html'" id="button_2" class="ml-lg-3">
                           <li class="navbar-brand ml-lg-3">
                               <img src="../assets/lampadinha.jpg" alt="StartWeb" id="logo" width="140px" height="140px" class="rounded-circle">
@@ -32,7 +33,7 @@
                         </li>
                         </button>
 
-                      <button type="menu" class="btn-cadastro m-lg-3" onclick="Mudarestado(minhaDiv)" id="button_head" data-element="#minhaDiv">
+                      <button type="menu" class="btn-cadastro m-lg-3" onclick="Mudarestado(aba_cad)" id="button_head" data-element="#aba_cad">
                         <li class="nav-item m-lg-3">
                           
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
@@ -82,7 +83,6 @@
               </div>
               
               <div class="col-sm" id="login">
-                <div class="row"><br></div>
                 <div class="row justify-content-md-center">
                   <div class="col">
                     <h1 id="login_lab">
@@ -98,7 +98,7 @@
                     <input class="email" alt="email" id="email-box" placeholder="E-mail"> 
                       <br><br>
                       <input class="password" name="pwd" id="pass-box" placeholder="Senha"> 
-                      <br><br><br>
+                      <br><br>
 
                       <button type="submit" class="btn-entrar btn-group-vertical">
                         entrar
@@ -119,27 +119,21 @@
           </div>
 
         </div>
-
-        <div id="cadastro">
-          <div class="content-sm align-content-center">
+        <div display="none" id="aba_cad">
+        <div class="container-sm" id="cadastro">
             <div class="row"><br></div>
-            <div class="row align-content-center">
-              <div class="col">
-              </div>
-              <div class="col">
-                <h3> CADASTRO</h3></div>
-                <div class="col">
-                </div>
+            <div class="row justify-content-md-center">
+                <h3> CADASTRO</h3>
             </div>
             <div class="row"><br></div>
+            <div class="row justify-content-md-center">
               
                 
-          
             <form action="cadastro.php" method="POST">
               <input class="email" alt="email" id="email-box" placeholder="E-mail"> 
                 <br><br>
                 <input class="password" name="pwd" id="pass-box" placeholder="Senha"> 
-                <br><br><br>
+                <br><br>
 
                 <button type="submit" class="btn-entrar">
                   entrar
@@ -151,11 +145,11 @@
                   login com o google
                 </button>
             </form>
-            <div class="col">
+          </div>
+          <div class="row"><br><br></div>
             </div>
           </div>
           </div>
-        </div>
        
         <!--
           RODAPÉ

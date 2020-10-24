@@ -1,5 +1,3 @@
-import * as jquery from 'jquery/dist/jquery';
-
 
 function Mudarestado(el) {
     var display = document.getElementById(el).style.display;

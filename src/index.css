@@ -132,10 +132,6 @@
     align-items: center;
     height:100px;
     background-color: #89d7ef;
-    
-}
-.footer{
-    position: relative;
     bottom: 0;
-    width: 100%;
+    
 }
