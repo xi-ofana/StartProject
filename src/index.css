@@ -1,0 +1,141 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+    .container-fluid{
+        width: 100%;
+    }
+    body{
+        overflow: visible;  
+        overflow-wrap: break-word; 
+    }
+    p{
+        font-family: Helvetica, arial;
+    }
+
+   /* HEADER
+
+   */
+
+
+    a{
+        color: #f8f89f;
+        font-size: 25px;
+        text-align: center;
+    }
+    a:hover{
+        color: #89d7ef;
+    }
+
+    #button_head{
+        font-weight: bold;
+        border: transparent;
+        background: #89d7ef;
+        color: #f8f89f;
+        font-size: 25px;
+        width: fit-content;
+    }
+    #button_head:hover{
+        font-weight: normal;
+        background: #f8f89f;
+        text-decoration-color: #89d7ef;
+        color: #89d7ef;
+        border: transparent;
+        
+    }
+    #button_2 {
+        border: transparent;
+        background: #89d7ef;
+        font-size: 25px;
+        
+    }
+    #logo{
+        border: solid;
+        border-color: #f8f89f;
+        border-collapse: collapse;
+        opacity: 50%;
+    }
+    #logo:hover{
+        opacity: 100%;
+    }
+    .navbar{
+        background-color: #89d7ef;
+    }
+
+/* CONTEUDO 
+
+*/
+    
+    #texto_sobre{
+        font-weight: bolder;
+        text-align: center;
+        font-family: Helvetica;
+        background-color: #f8f89f;
+        align-content: center;
+        
+        
+    }
+    #login{
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+        scroll-snap-align: center;
+        font-family: helvetica;
+        align-content: center;
+        background-color: #89d7ef;
+
+    }
+    #login_lab{
+        font-family: Helvetica;
+        font-style: bold;
+        color: #f8f89f;
+        align-content: center;
+    }
+    input{
+        width: 400px;
+        border-color: transparent;
+    }
+    .pass-box{
+        width: 400px;
+        border-color: transparent;
+    }
+    .btn-entrar{
+        background-color: #378fac;
+        color: whitesmoke;
+        border-color: transparent;
+        width: 400px;
+    }
+    .btn-face{
+        background-color: #21567e;
+        color: whitesmoke;
+        width: 400px;
+        border-color: transparent;
+        
+    }
+    .btn-google{
+        background-color: #f893a3;
+        color: whitesmoke;
+        width: 400px;
+        border-color: transparent;
+    }
+    #cadastro{
+        background-color: #89d7ef;
+
+    }
+
+
+/* RODAPÉ 
+
+*/
+#footer{
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    height:100px;
+    background-color: #89d7ef;
+    
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
