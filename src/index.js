@@ -1,4 +1,5 @@
 
+
 function Mudarestado(el) {
     var display = document.getElementById(el).style.display;
     
