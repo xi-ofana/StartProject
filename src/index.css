@@ -1,12 +1,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
+    .border{
+        color: #378fac;
+    }
     .container-fluid{
         width: 100%;
+    
     }
     body{
-        overflow: visible;  
-        overflow-wrap: break-word; 
+        background-color: whitesmoke;
     }
     p{
         font-family: Helvetica, arial;
@@ -27,16 +30,19 @@
     }
 
     #button_head{
-        font-weight: bold;
-        border: transparent;
+        border: thin;
+        border-color: whitesmoke;
         background: #89d7ef;
-        color: #f8f89f;
+        color: whitesmoke;
         font-size: 25px;
         width: fit-content;
     }
+    #button_head:checked{
+        border: transparent;
+    }
     #button_head:hover{
         font-weight: normal;
-        background: #f8f89f;
+        background: whitesmoke;
         text-decoration-color: #89d7ef;
         color: #89d7ef;
         border: transparent;
@@ -50,12 +56,12 @@
     }
     #logo{
         border: solid;
-        border-color: #f8f89f;
+        border-color: whitesmoke;
         border-collapse: collapse;
         opacity: 50%;
     }
     #logo:hover{
-        opacity: 100%;
+        opacity: 100%;  
     }
     .navbar{
         background-color: #89d7ef;
@@ -69,9 +75,9 @@
         font-weight: bolder;
         text-align: center;
         font-family: Helvetica;
-        background-color: #f8f89f;
+        background-color: whitesmoke;
         align-content: center;
-        
+        color: #378fac;
         
     }
     #login{
@@ -81,17 +87,18 @@
         scroll-snap-align: center;
         font-family: helvetica;
         align-content: center;
-        background-color: #89d7ef;
+        background-color: white;
+        border-color: whitesmoke;
+        color: #378fac;
 
     }
     #login_lab{
         font-family: Helvetica;
         font-style: bold;
-        color: #f8f89f;
+        color: #378fac;;
         align-content: center;
     }
-    input{
-        width: 400px;
+    .input{
         border-color: transparent;
     }
     .pass-box{
@@ -102,19 +109,17 @@
         background-color: #378fac;
         color: whitesmoke;
         border-color: transparent;
-        width: 400px;
     }
     .btn-face{
         background-color: #21567e;
         color: whitesmoke;
-        width: 400px;
         border-color: transparent;
         
     }
     .btn-google{
         background-color: #f893a3;
         color: whitesmoke;
-        width: 400px;
+        
         border-color: transparent;
     }
     #cadastro{
@@ -135,3 +140,11 @@
     bottom: 0;
     
 }
+
+.visible {
+    visibility: visible !important;
+  }
+  .invisible {
+    visibility: hidden !important;
+  }
+  

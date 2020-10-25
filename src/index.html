@@ -2,7 +2,7 @@
   <html lang="pt-br">
       <head>
           <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
           
           <link rel="stylesheet" href="index.css">
           <script src="index.js"></script>
@@ -14,47 +14,44 @@
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
       <header>
           
-              <div class="navbar navbar-expand-lg d-flex justify-content-around" role="navigation">
-                  <ul class="nav justify-content-xl-around">
-                    
-                        <button onclick="document.locaction='#index.html'" id="button_2" class="ml-lg-3">
-                          <li class="navbar-brand ml-lg-3">
-                              <img src="../assets/lampadinha.jpg" alt="StartWeb" id="logo" width="140px" height="140px" class="rounded-circle">
+              <div class="navbar justify-content-center" role="navigation">
+                  <ul class="nav nav-pills nav-fill">
+
+                          <li class="navbar-brand">
+                              <img src="../assets/lampadinha.jpg" alt="StartWeb" id="logo" class="rounded-circle max-height: w-25 max-width: w-25">
                           </li>
                         </button>
-
-                        <button onclick="document.location='#texto_sobre'" id="button_head" class="ml-lg-3">
-                          <li class="nav-item ml-lg-3">
+                        <button onclick="document.location='#texto_sobre'" id="button_head" >
+                          <li class="nav-item ">
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-easel-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5h-2zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2z"/>
-                          </svg> <br>
+                          </svg>
                           SOBRE
                         
                         </li>
                         </button>
 
-                      <button type="menu" class="btn-cadastro m-lg-3" onclick="Mudarestado(aba_cad)" id="button_head" data-element="#aba_cad">
-                        <li class="nav-item m-lg-3">
+                      <button type="menu" class="btn-cadastro" onclick="Mudarestado(aba_cad)" id="button_head" data-element="#aba_cad">
+                        <li class="nav-item">
                           
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
                             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
                           </svg>
-                          <br>CADASTRO
+                          CADASTRO
                         </li>
                           
                         </button>
-
                       
-                        <button onclick="" id="button_head" class="my-2 my-lg-0">
-                          <li class="nav-item my-2 my-sm-0">
+                        <button onclick="" id="button_head" >
+                          <li class="nav-item">
                             
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
-                          </svg><br> PROJETOS
+                          </svg> PROJETOS
                           </li>
                         </button>
-                
-                     </div>
+                      
+                     
                     </ul>
               </div>
         
@@ -62,44 +59,52 @@
         <!-- AQUI VAI O CONTEÚDO-->
         
         <div>
-          <div class="container-sm">
+          
+          <div class="container-fluid">
+            <span class="border-bottom-0"></span>
             <div class="row justify-content-md-center"></div>
             <div class="row justify-content-center">
               <div class="col-sm" id="texto_sobre">
                 <article>
                   <section><br>
-                        <h3>- TEXTO SOBRE O PROJETO -</h3>
+
+                    <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
+                    <br>
+                    <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
+                        
                         <br>
-                        <h3>- TEXTO SOBRE O PROJETO -</h3>
+                        <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
                         <br>
-                        <h3>- TEXTO SOBRE O PROJETO -</h3>
-                        <br>
-                        <h3>- TEXTO SOBRE O PROJETO -</h3>
+                        <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
                   </section>
                 </article>
                 <br>
                 <br>
                 <br>
               </div>
-              
               <div class="col-sm" id="login">
+                <div class="row"><br></div>
                 <div class="row justify-content-md-center">
                   <div class="col">
                     <h1 id="login_lab">
-                      login
+                      Login
                     </h1>
                   </div>
                   <br>
                 </div>
                 <div class="row"><br></div>
 
-                <div class="row justify-content-md-center">
+                <div class="row align-items-center">
                   <form action="login.php" method="POST">
-                    <input class="email" alt="email" id="email-box" placeholder="E-mail"> 
-                      <br><br>
-                      <input class="password" name="pwd" id="pass-box" placeholder="Senha"> 
-                      <br><br>
-
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                      </div>
+                    </div>
+                    <div class="input-group mb-lg-3">
+                      <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2">
+                      
+                    </div>
                       <button type="submit" class="btn-entrar btn-group-vertical">
                         entrar
                       </button><br><br>
@@ -119,7 +124,7 @@
           </div>
 
         </div>
-        <div display="none" id="aba_cad">
+        <div class="invisible">
         <div class="container-sm" id="cadastro">
             <div class="row"><br></div>
             <div class="row justify-content-md-center">
