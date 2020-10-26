@@ -1,8 +1,10 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
+    hr{
+        color: white;
+    }
     .border{
-        color: #378fac;
+        color: white;
     }
     .container-fluid{
         width: 100%;
@@ -35,7 +37,9 @@
         background: #89d7ef;
         color: whitesmoke;
         font-size: 25px;
-        width: fit-content;
+        width: 35%;
+        height: 35%;
+
     }
     #button_head:checked{
         border: transparent;
@@ -57,7 +61,7 @@
     #logo{
         border: solid;
         border-color: whitesmoke;
-        border-collapse: collapse;
+        border: collapse;
         opacity: 50%;
     }
     #logo:hover{
@@ -65,8 +69,11 @@
     }
     .navbar{
         background-color: #89d7ef;
+        color: whitesmoke;
     }
-
+    .navbar-toggler-icon{
+        border: whitesmoke
+    }
 /* CONTEUDO 
 
 */
@@ -97,6 +104,7 @@
         font-style: bold;
         color: #378fac;;
         align-content: center;
+        font-size: 30px;
     }
     .input{
         border-color: transparent;
@@ -126,7 +134,10 @@
         background-color: #89d7ef;
 
     }
-
+    #inferior{
+        background-color: whitesmoke;
+        padding: 10px;
+    }
 
 /* RODAPÉ 
 
@@ -135,16 +146,7 @@
     align-self: center;
     text-align: center;
     align-items: center;
-    height:100px;
     background-color: #89d7ef;
     bottom: 0;
     
 }
-
-.visible {
-    visibility: visible !important;
-  }
-  .invisible {
-    visibility: hidden !important;
-  }
-  
