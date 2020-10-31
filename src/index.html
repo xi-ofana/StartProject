@@ -11,9 +11,22 @@
             </title>
       </head>
     <body>
+      <!--
+        Pre-loader
+      -->
+      <!-- início do preloader -->
+      <div id="preloader">
+          <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>                    
+            </div>
+          </div>
+      </div>
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
-      <header>
-          
+      <header id="topo">
               <nav class="navbar navbar-expand-lg navbar-fixed-top" role="navigation">
                   
                     <a class="navbar-brand">
@@ -67,27 +80,14 @@
         <!-- AQUI VAI O CONTEÚDO-->
         
         <div>
-          
+          <main class="conteudo">
           <div role="main">
+            
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-sm" id="texto_sobre">
-                    <article>
-                      <section><br>
-    
-                        <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
-                        <br>
-                        <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
-                            
-                            <br>
-                            <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
-                            <br>
-                            <h3>- TEXTO SOBRE <small class="text-muted">O PROJETO -</small> </h3>
-                      </section>
-                    </article>
-                    <br>
-                    <br>
-                    <br>
+                  <div class="col-sm align-content-center justify-content-sm-center" id="texto_sobre" style="padding: 20px">
+                      
+                      <h1 class="display-4"> Bem-vindo ao </h1><h3 class="display-4">StartWeb</h3> 
                   </div>
                 <div class="col-sm" id="login">
                   <div class="row"><Br></div>
@@ -134,50 +134,66 @@
               </div>
               <hr>
             </div>
+            <!--
+              Espaço para anuncios1
+            -->
+            <div class="container-fluid">
+            </div>
+            <!--
+              Sugetões:
+            -->
+            <div class="container-fluid">
+              <div class="col">
+                <form class="form-text">
+                  <div class="row justify-content-center">
+                    <h1 class="display-4 text-right" style="font-size: 50px;"> Sugestões: </h1>
+                  </div><br>
+                  <div class="row justify-content-center">
+                    <div class="col">
+                      <div class="input-group width: w-75">
+                        <div class="input-group-append">
+                          <textarea type="text" class="form-control mb-3 width: w-100" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-around">
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary width: w-75">Enviar</button>
+                    </div>
+                  <div class="col">
+                        <input type="reset" class="btn btn-danger width: w-75"></input>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div class="col">
+
+            </div>
+            <hr>
+          </div>
               <!--
                 PARTE DE INFORMAÇÕES ANTES DO RODAPÉ
               -->
-              <div class="container-fluid" id="inferior">
+              <div class="container-fluid mx-lg-3" id="inferior" style="padding: 10px;">
                 <div class="row">
-                  <div class="col justify-content-center">
-                      <span font-family="helvetica">
-                        Fale Conosco<br> 
+                  <div class="col-lg-6 col-sm-12  justify-content-center align-content-center mb-3">
+                      <span class="text-monospace" style="color: #378fac;">
+                        Fale Conosco:<br> 
                         startapp@gmail.com
                       </span>
                     
                   </div>
                   
-                  <div class="col">
-                    <form class="form-text">
-                      <div class="row">
-                        <span>
-                          Sugestões:
-                        </span>
-                      </div><br>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="input-group">
-                            <div class="input-group-append">
-                              <textarea type="text" class="form-control mb-3" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row justify-content-around">
-                        <div class="col">
-                          <button type="submit" class="btn btn-primary width: w-75">Enviar</button>
-                        </div>
-                        <div class="col">
-                            <input type="reset" class="btn btn-danger width: w-75"></input>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
                   
-                  <div class="col">
-                    <span>
+                  <div class="col-lg-6 col-sm-12 justify-content-center align-content-center mb-3">
+                    <spa class="text-monospace" style="color: #379fac;">
                       EM BREVE
                     </span>
+                    <br>
+                    <p class="text-monospace text-justify">
+                      Uma versão de nossa plataforma<br> para o seu dispositivo mobile
+                    </p>
 
                   </div>
                 </div>
@@ -241,17 +257,19 @@
         <!--
           RODAPÉ
         -->
-        <footer class="container">
+        <footer class="container-footer" style="padding: 10px;">
               <br>
               <div class="row align-items-center">
+                  <div class="col"></div>
                   <div class="col">
-                  </div>
-                  <div class="col">
-                  <span> 
-                    Desenvolvido por TR3S GATINHAX (^･ｪ･^)
+                  <span class="text-monospace"> 
+                    Desenvolvido por TR3S GATINHAX(^･ｪ･^)
                   </span></div>
-                  <div class="col">
-                  </div>
+                  <div class="col"></div>
+              </div>
+              <div class="row">
+                <button class="btn btn-link text-center" onclick="document.location='#topo'">Voltar ao topo 
+                </button>
               </div>
           </div>
 
@@ -261,6 +279,20 @@
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--
+          JAVASCRIPT DO PRE-LOADER
+        -->
+        <script>
+
+          //<![CDATA[
+          $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({'overflow': 'visible'});
+          })
+          //]]>
+          
+          </script>
       
       </footer> 
     </body>
