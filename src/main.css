@@ -1,5 +1,9 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+    @font-face{
+        font-family: 'rowdies';
+        src: local(Rowdies-Regulartff);
+    }
     hr{
         color: white;
     }
@@ -12,9 +16,10 @@
     }
     body{
         background-color: whitesmoke;
+        padding-top: 100px;
     }
     p{
-        font-family: Helvetica, arial;
+        font-family: Helvetica,;
     }
 
    /* HEADER
@@ -37,8 +42,8 @@
         background: #89d7ef;
         color: whitesmoke;
         font-size: 25px;
-        width: 35%;
-        height: 35%;
+        width: 45%;
+        height: 45%;
 
     }
     #button_head:checked{

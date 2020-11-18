@@ -27,10 +27,10 @@
       </div>
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
       <header id="topo">
-              <nav class="navbar navbar-expand-lg navbar-fixed-top" role="navigation">
+              <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
                   
                     <a class="navbar-brand" href="index.html" >
-                      <img src="../assets/lampadinha.jpg" alt="StartWeb" id="logo" class="rounded-circle max-height: w-25 max-width: w-25 ">
+                      <img src="../assets/lampadinha.jpg" alt="StartWeb" id="logo" class="rounded-circle max-height: w-25 max-width: w-25">
                     
                     </a>
                     <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
@@ -79,15 +79,22 @@
         </header>
         <!-- AQUI VAI O CONTEÚDO-->
         
-        <div>
-          <div class="conteudo">
+        <main>
+          <div class="conteudo m-4">
           <div role="main">
-            
-              <div class="container-fluid">
+            <!-- 
+              Container Principal SOBRE NÓS
+            -->
+              <div class="container-fluid m-2">
                 <div class="row">
-                  <div class="col-sm align-content-center justify-content-sm-center" id="texto_sobre" style="padding: 20px">
-                      
-                      <h1 class="display-4"> Bem-vindo ao </h1><h3 class="display-4">StartWeb</h3> 
+                  <div class="jumbotron-fluid">
+                    <div class="col-12 " id="texto_sobre" style="padding: 20px">
+                  
+                      <h1 class="display-3 float-sm-left"> Bem-vindo ao </h1><h3 class="display-3 float-sm">StartWeb</h3> 
+
+                      <img class="img float-right" src="../assets/collaborate-2103904.png">
+                    </div>
+                  </div>
                   </div>
                 <div class="col-sm" id="login">
                   <div class="row"><Br></div>
@@ -146,7 +153,7 @@
               <div class="col">
                 <form class="form-text">
                   <div class="row justify-content-center">
-                    <h1 class="display-4 text-right" style="font-size: 50px;"> Sugestões: </h1>
+                    <h3 class="display-4" style="font-size: 50px;"> Sugestões: </h3>
                   </div><br>
                   <div class="row justify-content-center">
                     <div class="col">
@@ -260,8 +267,8 @@
                 MODAL CAD PROFISSIONAL
               -->  
 
-              <div class="modal fade"id="cad_prof" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document" >
+              <div class="modal fade"id="cad_prof" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"> 
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title">Cadastro Usuário Profissional</h5>
@@ -341,7 +348,6 @@
                               </div>
                             </div>
                         <div class="modal-footer m-3">
-                          <input type="reset" class="btn btn-outline-info" placeholder="Limpar"></input>
                           <button type="button" class="btn btn-danger" data-dismiss="modal" id="fechar_cad">Fechar</button>
                           <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
@@ -350,10 +356,11 @@
                     </div>
               </div>
               </div>
+              </div>
               <!--
                 MODAL CAD EMPRESARIAL
               -->
-              <div class="modal fade" tabindex="-1" id="cad_emp" role="dialog" aria-hidden="true">
+              <div class="modal fade" id="cad_emp" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -362,25 +369,26 @@
                     </h5>
                   </div>
                   <div class="modal-body">
-                    <label class="text-decoration-none">
-                      Preencha com as informações:
-                    </label>
-                    <!-- 
-                      Formulario cadastro
-                    -->
-                    <div class="needs-validation" novalidate>
-                      <div class="row mt-1">
-                        <div class="col">
-                          <input name="campoNome" type="text" class="form-control" placeholder="Nome da empresa">
+                    <div class="container-fluid">
+                      <label class="text-decoration-none">
+                        Preencha com as informações:
+                      </label>
+                      <!-- 
+                        Formulario cadastro
+                      -->
+                      <div class="needs-validation" novalidate>
+                        <div class="row mt-1">
+                          <div class="col">
+                            <input name="campoNome" type="text" class="form-control" placeholder="Nome da empresa">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-
+</div>
+</div>
                 </div>
-              </div>
-          </main>
+              </main>
         <!--
           RODAPÉ
         -->
@@ -429,6 +437,8 @@
           
           </script>
       
+        <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
+     
       </footer> 
     </body>
 </html>
