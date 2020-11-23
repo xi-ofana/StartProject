@@ -1,9 +1,6 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-    @font-face{
-        font-family: 'rowdies';
-        src: local(Rowdies-Regulartff);
-    }
+    
     hr{
         color: white;
     }
@@ -55,6 +52,8 @@
         text-decoration-color: #89d7ef;
         color: #89d7ef;
         border: transparent;
+        width: 45%;
+        height: 45%;
         
     }
     #button_2 {
@@ -62,15 +61,6 @@
         background: #89d7ef;
         font-size: 25px;
         
-    }
-    #logo{
-        border: solid;
-        border-color: whitesmoke;
-        border: collapse;
-        opacity: 50%;
-    }
-    #logo:hover{
-        opacity: 100%;  
     }
     .navbar{
         background-color: #89d7ef;

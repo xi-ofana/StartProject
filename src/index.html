@@ -42,31 +42,37 @@
 
                     <div class=" collapse navbar-collapse" id="conteudoNavbarSuportado">
                           <ul class="navbar-nav mr-auto">
-                            <div class="navbar-brand"><button id="button_head"> StartWeb </button> </div>
+                            <button onclick="document.location='index.html'" id="button_head">
+                            <li class="navbar-brand m-2 p-1 mx-auto">
+                              <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                              </svg><br></li>
+                              StartWeb</button>
 
                         <button onclick="document.location='#texto_sobre'" id="button_head" >
-                          <li class="nav-item m-1">
+                          <li class="nav-item m-1 p-1">
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-easel-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5h-2zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2z"/>
-                            </svg><br> SOBRE
+                            </svg><br> Sobre
                          </li>
                         </button>
                         <button onclick="document.location='feed.html'" id="button_head" >
-                          <li class="nav-item m-1"> 
+                          <li class="nav-item m-1 p-1"> 
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
-                            </svg> PROJETOS
+                            </svg> Projetos
                           </li>
                         </button>
                         
 
                       <button type="menu" id="button_head" data-toggle="modal" data-target="#modalCad">
-                        <li class="nav-item m-1">
+                        <li class="nav-item m-1 p-1">
                           
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
                             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
                           </svg>
-                          CADASTRO
+                          Cadastro
                         </li>
                           
                         </button>
@@ -102,8 +108,9 @@
                     </div>
                   
                   </div>
-                </div>
-                <div class="col-sm" id="login">
+                  <div class="container-fluid">
+                    <div class="row">
+                <div class="col-6" id="login">
                   <div class="row"><Br></div>
                   <div class="row justify-content-md-center">
                     <div class="col">
@@ -145,38 +152,29 @@
                       
                     </div>
                   </div>
-              </div>
-              <hr>
-            </div>
-            <!--
-              Espaço para anuncios1
-            -->
-            <div class="container-fluid">
-            </div>
-            <!--
+                  <!--
               Sugetões:
             -->
-            <div class="container-fluid">
-              <div class="col">
+              <div class="col m-3">
                 <form class="form-text">
                   <div class="row justify-content-center">
                     <h3 class="display-4" style="font-size: 50px;"> Sugestões: </h3>
                   </div><br>
                   <div class="row justify-content-center">
                     <div class="col">
-                      <div class="input-group width: w-75">
+                      <div class="input-group">
                         <div class="input-group-append">
-                          <textarea type="text" class="form-control mb-3 width: w-100" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
+                          <textarea type="text" class="form-control mb-3" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row justify-content-around">
                     <div class="col">
-                      <button type="submit" class="btn btn-primary width: w-75">Enviar</button>
+                      <button type="submit" class="btn btn-primary width: w-75 m-3">Enviar</button>
                     </div>
                   <div class="col">
-                        <input type="reset" class="btn btn-danger width: w-75"></input>
+                        <input type="reset" class="btn btn-danger width: w-75 m-3"></input>
                     </div>
                   </div>
               </form>
@@ -184,7 +182,18 @@
             <div class="col">
 
             </div>
-            <hr>
+            
+              </div>
+            </div>
+          </div>
+              <hr>
+            </div>
+            <!--
+              Espaço para anuncios1
+            -->
+            <div class="container-fluid">
+            </div>
+            
           </div>
               <!--
                 PARTE DE INFORMAÇÕES ANTES DO RODAPÉ
@@ -240,7 +249,7 @@
                                     <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
                                   </svg>
                                 </div>
-                                <label class="card-text ml-3 mr-3 mt-1">Possui uma startup e deseja criar sua conta para divulga-la</label>
+                                <label class="card-text ml-3 mr-3 mt-1">Possui uma startup na Região do Alto Tietê e deseja divulga-la</label>
                                 <button class="btn btn-entrar m-3" data-toggle="modal" data-target="#cad_emp" data-dismiss="modal"><a>
                                   Conta Empresarial</a>
                                   
@@ -255,7 +264,7 @@
                                       <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
                                     </svg>
                                 </div>
-                                  <label class="card-text ml-3 mr-3 mt-1">Trabalha em uma startup ou deseja apoiar startups</label>
+                                  <label class="card-text ml-3 mr-3 mt-1">Deseja apoiar e conhecer startups da Região do Alto Tietê</label>
                                   <button class="btn btn-entrar justify-content-center m-3" data-toggle="modal" data-target="#cad_prof" data-dismiss="modal"><a>Conta Profissional</a>
                                   </button>
                               </div>
@@ -355,8 +364,9 @@
                               </div>
                             </div>
                         <div class="modal-footer m-3">
-                          <button type="button" class="btn btn-danger" data-dismiss="modal" id="fechar_cad">Fechar</button>
+                          <button type="button" class="btn btn-google" data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</button>
                           <button type="submit" class="btn btn-primary">Cadastrar</button>
+                         
                         </div>
                       </div>
                     </div> 
@@ -385,12 +395,62 @@
                       -->
                       <div class="needs-validation" novalidate>
                         <div class="row mt-1">
-                          <div class="col">
+                          <div class="col-md">
                             <input name="campoNome" type="text" class="form-control" placeholder="Nome da empresa">
                           </div>
                         </div>
+                          <div class="row mt-1">
+                            <div class="col-md">
+                              
+                          <label class="form-text ">CNPJ:</label>
+                          <input name="cnpj" type="text" class="form-control" placeholder="00.000.000/0000-00">
+
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text">Fundação: </label>
+                              <input name="fundac" type="date" class="form-control">
+                            </div>
+
+                          </div>
+                          <div class="row mt-1">
+                            
+                            <div class="col-md">
+                              <label class="form-text">Endereço: </label>
+                              <input name="endEmp" type="text reset" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text">Número (e/ou complemento):</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text">Cidade: </label>
+                              <input name="cidades" class="form-control" list="cidades" placeholder="Selecione a cidade">
+                              <datalist id="cidades">
+                                <option>Arujá</option>
+                                <option>Biritiba-Mirim</option>
+                                <option>Ferraz de Vasconcelos</option>
+                                <option>Guararema</option>
+                                <option>Guarulhos</option>
+                                <option>Itaquaquecetuba</option>
+                                <option>Mogi das Cruzes</option>
+                                <option>Poá</option>
+                                <option>Salesópolis</option>
+                                <option>Santa Isabel</option>
+                                <option>Suzano</option>
+                              </datalist>
+                          </div>
+                      </div>
+                      <div class="row mt-1">
+
+                      </div>
+
+                        </div>
                       </div>
                     </div>
+                  <div class="modal-footer m-3">
+                    <button type="button" class="btn btn-google reset" data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                   
                   </div>
 </div>
 </div>
@@ -400,6 +460,13 @@
           RODAPÉ
         -->
         <footer class="container-footer mx-0">
+          <div class="row align-items-center">
+            <div class="col"></div>
+                <div class="col-5 align-items-center m-3 mx-0">
+                  <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
+                </div>
+            <div class="col"></div>
+              </div>
               <div class="row align-items-center">
                 <div class="col"></div>
                   <div class="col align-items-center m-3">
@@ -410,16 +477,7 @@
                 <div class="col"></div>
               </div>
               
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col align-items-center m-3">
-                  <button class="btn btn-toolbar" onclick="document.location='#topo'">
-                    Voltar ao topo 
-                  </button>
-                </div>
-                <div class="col"></div>
-              </div>
-          </div>
+              
 
            <!--
           BOOTSTRAP LINKS :)
@@ -444,8 +502,7 @@
           
           </script>
       
-        <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
-     
+        
       </footer> 
     </body>
 </html>
