@@ -27,7 +27,7 @@
       </div>
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
       <header id="topo">
-              <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
+              <nav class="navbar fixed-top navbar-expand-lg flex-column" role="navigation">
                   
                     <a class="navbar-brand" href="index.html" >
                       
@@ -85,7 +85,7 @@
         <!-- AQUI VAI O CONTEÚDO-->
         
         <main>
-          <div class="conteudo m-4">
+          <div class="conteudo">
           <div role="main">
             <!-- 
               Container Principal SOBRE NÓS
@@ -100,65 +100,65 @@
                         <img class="img-fluid " src="../assets/collaborate-2103904.png">
                       </div>
                       <div class="col text-center ">
-                          <h1 class="display-3 m-3">Bem-vindo ao</h1>
+                          <h1 class="display-3 mt-5 ml-3 mr-3">Bem-vindo ao</h1>
                   
-                          <h3 class="display-3 m-3">StartWeb</h3> 
+                          <h3 class="display-3 ml-3 mr-3">StartWeb</h3> 
+                          <p class="lead mb-3 mt-4 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
+                            venha fazer parte dessa comunidade  </p>
+                            <div class="container-fluid">
+                              <div class="row-sm mb-3">
+                                <div class="col-5">
+                                  <button class="btn btn-entrar" onclick="document.location='#login'">Realizar Login</button>
+                                </div>
+                                <div class="col-5">
+                                  <button class="btn btn-google" data-toggle="modal" data-target="#modalCad">Realizar cadastro</button>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="text-monospace" style="color:#379fac">Versão 0.1.0</p>
                         </div>
                       </div>
                     </div>
                   
                   </div>
-                  <div class="container-fluid">
-                    <div class="row">
-                <div class="col-6" id="login">
-                  <div class="row"><Br></div>
-                  <div class="row justify-content-md-center">
-                    <div class="col">
-                      <h1 id="login_lab">
-                        Login
-                      </h1>
-                    </div>
-                    <br>
-                  </div>
-                  <div class="row"><br></div>
-  
-                  <div class="row justify-content-md-center align-items-center">
-                      <div class="col"></div>
-                      <div class="col-6 align-content-center justify-content-center">
-                      <form >
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
-                          <div class="input-group-append">
-                          </div>
+                  <div class="container-fluid" id="login">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row justify-content-md-center mt-5">
+                        <div class="col mt-3 mb-2">
+                          <h1 id="login_lab">
+                            LOGIN
+                          </h1>
                         </div>
-                        <div class="input-group mb-lg-3 width: w-120">
-                          <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
+                      </div>
+                      <div class="row justify-content-md-center align-items-center flex-column m-4">
+                          <div class="col-md-4 col-sm-8 flex-column align-content-center justify-content-center">
+                          <form >
+                            <div class="input-group mb-4">
+                              <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
+                              <div class="input-group-append">
+                              </div>
+                            </div>
+                            <div class="input-group mb-4">
+                              <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
+                              
+                            </div>
+                              <button type="submit" class="btn btn-entrar mb-5 col-12 " onclick="validar()">
+                                entrar
+                              </button>
+                              
+                            </form>
+                            </div>
                           
                         </div>
-                        <br>  
-                          <button type="submit" class="btn btn-entrar mx width: w-100" onclick="validar()">
-                            entrar
-                          </button><br><br>
-                          <button type="submit" class="btn btn-face mx width: w-100">
-                          login com o facebook
-                          </button><br><br>
-                          <button type="submit" class="btn btn-google mx width: w-100">
-                            login com o google
-                          </button>
-                          <br><br>
-                        </form>
-                        </div>
-                        <div class="col"></div>
-                      
                     </div>
-                  </div>
                   <!--
               Sugetões:
             -->
               <div class="col m-3">
                 <form class="form-text">
                   <div class="row justify-content-center">
-                    <h3 class="display-4" style="font-size: 50px;"> Sugestões: </h3>
+                    <h3 class="display-4" style="font-size: 50px; font-weight: normal;" id="suges"> Sugestões: </h3>
                   </div><br>
                   <div class="row justify-content-center">
                     <div class="col">
@@ -178,7 +178,7 @@
                     </div>
                   </div>
               </form>
-            </div>
+            </div></div>
             <div class="col">
 
             </div>

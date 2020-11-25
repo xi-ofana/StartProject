@@ -82,13 +82,12 @@
         
     }
     h3{
-        color:#378fac;
+        color:#89d7ef;
     }
     h1{
-        color: #89d7ef;
+        color: #378fac;
     }
     #login{
-        font-weight: bold;
         align-self: center;
         text-align: center;
         scroll-snap-align: center;
@@ -101,7 +100,6 @@
     }
     #login_lab{
         font-family: Helvetica;
-        font-style: bold;
         color: #378fac;;
         align-content: center;
         font-size: 30px;
@@ -213,3 +211,6 @@
   } 
 }
 /* end: Preloader */
+.suges{
+    font-weight: normal;
+}
