@@ -318,7 +318,7 @@
                                 
                                 <label class="form-text">Telefone: </label>
                                   
-                                <input type="tel" class="form-control" id="inputTel" placeholder="(DDD)0000-0000">
+                                <input type="tel" class="form-control" id="inputTel" placeholder="ex: (DDD)0000-0000">
                               </div>
                                 
                             
@@ -349,7 +349,7 @@
                                     </div>
                                   <div class="col-6">
                                     <label class="form-text">E-mail:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="fulano@gmail.com">
+                                    <input type="email" class="form-control" id="email" placeholder="ex: fulano@gmail.com">
 
                                   </div>
                             </div>
@@ -424,8 +424,8 @@
                             </div>
                             <div class="col-md">
                               <label class="form-text">Cidade: </label>
-                              <input name="cidades" class="form-control" list="cidades" placeholder="Selecione a cidade">
-                              <datalist id="cidades">
+                              <select id="cidades" class="form-control">
+                                <option class="null">Selecione a cidade</option>
                                 <option>Arujá</option>
                                 <option>Biritiba-Mirim</option>
                                 <option>Ferraz de Vasconcelos</option>
@@ -437,11 +437,30 @@
                                 <option>Salesópolis</option>
                                 <option>Santa Isabel</option>
                                 <option>Suzano</option>
-                              </datalist>
+                                <option>Outra</option>
+                              </select>
                           </div>
                       </div>
                       <div class="row mt-1">
-
+                        <div class="col-sm">
+                          <label class="form-text">Telefone</label>
+                          <input type="tel" class="form-control" placeholder="ex: (DDD)0000-0000">
+                        </div>
+                        <div class="col-sm">
+                          
+                          <label class="form-text">E-mail</label>
+                          <input type="email" class="form-control" placeholder="ex: empresa@gmail.com">
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-sm">
+                          <label class="form-text">Senha: </label>
+                          <input type="password" class="form-control">
+                        </div>
+                        <div class="col-sm">
+                          <label class="form-text">Confirmar senha: </label>
+                          <input type="password" class="form-control">
+                        </div>
                       </div>
 
                         </div>
