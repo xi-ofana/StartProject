@@ -27,7 +27,7 @@
       </div>
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
       <header id="topo">
-              <nav class="navbar fixed-top navbar-expand-lg flex-column" role="navigation">
+              <nav class="navbar fixed-top navbar-expand-lg d-inline-flex" role="navigation">
                   
                     <a class="navbar-brand" href="index.html" >
                       
@@ -41,9 +41,10 @@
                     </button>
 
                     <div class=" collapse navbar-collapse" id="conteudoNavbarSuportado">
+
                           <ul class="navbar-nav mr-auto">
                             <button onclick="document.location='index.html'" id="button_head">
-                            <li class="navbar-brand m-2 p-1 mx-auto">
+                            <li class="navbar-brand  p-2 mx-auto">
                               <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                                 <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -96,97 +97,93 @@
                   
                    
                       
-                      <div class="col-6">
-                        <img class="img-fluid " src="../assets/collaborate-2103904.png">
+                      <div class="col-12 col-md-7 mt-1 mt-md-1 mt-lg-1 mt-xl-1 mx-auto">
+                        <img class="img-fluid mx-auto" src="../assets/collaborate-2103904.png" role="img">
                       </div>
-                      <div class="col text-center ">
-                          <h1 class="display-3 mt-5 ml-3 mr-3">Bem-vindo ao</h1>
+                      <div class="col-12 col-md-5 mt-md-3 mt-lg-3 mt-xl-3 ">
+                          <h1 class="display-3  mt-md-3 mt-lg-3 mt-xl-3" style="font-size: 70px;">Bem-vindo</h1>
                   
-                          <h3 class="display-3 ml-3 mr-3">StartWeb</h3> 
-                          <p class="lead mb-3 mt-4 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
-                            venha fazer parte dessa comunidade  </p>
+                          <h3 class="display-3 " style="font-size: 75px;"> StartWeb</h3> 
+                          <p class="lead mb-3 mt-2 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
+                            venha fazer parte dessa comunidade!  </p>
                             <div class="container-fluid">
-                              <div class="row-sm mb-3">
-                                <div class="col-5">
-                                  <button class="btn btn-entrar" onclick="document.location='#login'">Realizar Login</button>
-                                </div>
-                                <div class="col-5">
-                                  <button class="btn btn-google" data-toggle="modal" data-target="#modalCad">Realizar cadastro</button>
-                                </div>
+                              <div class="d-flex flex-column flex-md-row mb-1 justify-content-center">
+                                
+                                  <button class="btn btn-entrar m-3" onclick="document.location='#login'">Realizar Login</button>
+                                
+                                
+                                  <button class="btn btn-google m-3" data-toggle="modal" data-target="#modalCad">Realizar cadastro</button>
+                        
                               </div>
                             </div>
-                            <p class="text-monospace" style="color:#379fac">Versão 0.1.0</p>
+                            <p class="text-monospace text-lg-center text-center text-md-center text-sm-center" style="color:#379fac">Versão 0.1.0</p>
                         </div>
                       </div>
                     </div>
                   
                   </div>
+                  <!-- 
+                    Container lOGIN e SUGESTOES
+                  -->
                   <div class="container-fluid" id="login">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="row justify-content-md-center mt-5">
-                        <div class="col mt-3 mb-2">
-                          <h1 id="login_lab">
-                            LOGIN
-                          </h1>
-                        </div>
-                      </div>
-                      <div class="row justify-content-md-center align-items-center flex-column m-4">
-                          <div class="col-md-4 col-sm-8 flex-column align-content-center justify-content-center">
-                          <form >
-                            <div class="input-group mb-4">
-                              <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
-                              <div class="input-group-append">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="row justify-content-md-center mt-5">
+                              <div class="col mt-3 mb-2">
+                                <h1 id="login_lab">
+                                  Login
+                                </h1>
                               </div>
                             </div>
-                            <div class="input-group mb-4">
-                              <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
-                              
-                            </div>
-                              <button type="submit" class="btn btn-entrar mb-5 col-12 " onclick="validar()">
-                                entrar
-                              </button>
-                              
-                            </form>
-                            </div>
-                          
+                            <div class="row justify-content-md-center align-items-center flex-column m-4">
+                              <div class="col-sm-10 col-sm flex-column-reverse align-content-center justify-content-center">
+                                <form>
+                                  <div class="input-group mb-4">
+                                      <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
+                                      <div class="input-group-append">
+                                      </div>
+                                  </div>
+                                    <div class="input-group mb-4">
+                                      <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
+                                    </div>
+                                      <button type="submit" class="btn btn-entrar mb-5 col-12 " onclick="validar()">
+                                        Entrar
+                                      </button>
+                                  </form>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="row justify-content-center mt-md-5 mt-xl-5 mt-lg-5 flex">
+                              <form class="form-group">
+                                <div class="row mb-4 align-content-center justify-content-center">
+                                  <h1 class="display-3 mt-3 mb-3 mb-lg-2" id="login_lab"> 
+                                    Sugestões 
+                                  </h1>
+                                </div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="input-group">
+                                        <div class="input-group-append">
+                                          <textarea type="text" class="form-control mb-2" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex flex-column flex-md-row mb-1 justify-content-center">
+                                    <button type="submit" class="btn btn-primary col-12 m-3">Enviar</button>
+                                    <input type="reset" class="btn btn-danger col-12 m-3"></input>
+                                  </form>
+                                  </div>
+                                </div>
+                          </div>
                         </div>
-                    </div>
-                  <!--
-              Sugetões:
-            -->
-              <div class="col m-3">
-                <form class="form-text">
-                  <div class="row justify-content-center">
-                    <h3 class="display-4" style="font-size: 50px; font-weight: normal;" id="suges"> Sugestões: </h3>
-                  </div><br>
-                  <div class="row justify-content-center">
-                    <div class="col">
-                      <div class="input-group">
-                        <div class="input-group-append">
-                          <textarea type="text" class="form-control mb-3" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row justify-content-around">
-                    <div class="col">
-                      <button type="submit" class="btn btn-primary width: w-75 m-3">Enviar</button>
-                    </div>
-                  <div class="col">
-                        <input type="reset" class="btn btn-danger width: w-75 m-3"></input>
-                    </div>
-                  </div>
-              </form>
-            </div></div>
-            <div class="col">
-
-            </div>
-            
+                </div>
+                </div>
               </div>
             </div>
           </div>
-              <hr>
             </div>
             <!--
               Espaço para anuncios1
@@ -198,9 +195,9 @@
               <!--
                 PARTE DE INFORMAÇÕES ANTES DO RODAPÉ
               -->
-              <div class="container-fluid mx-lg-3" id="inferior" style="padding: 10px;">
-                <div class="row">
-                  <div class="col-lg-6 col-sm-12  justify-content-center align-content-center mb-3">
+              <div class="container-fluid mx-3" id="inferior" style="padding: 10px;">
+                <div class="row  p-5">
+                  <div class="col-lg-6 col-sm-12  justify-content-center align-content-center mb-1">
                       <span class="text-monospace" style="color: #378fac;">
                         Fale Conosco:<br> 
                         startapp@gmail.com
@@ -209,10 +206,10 @@
                   </div>
                   
                   
-                  <div class="col-lg-6 col-sm-12 justify-content-center align-content-center mb-3">
+                  <div class="col-lg-6 col-sm-12 justify-content-center align-content-center mb-1 ">
                     <spa class="text-monospace" style="color: #379fac;">
                       EM BREVE
-                    </span>
+                    </spa>
                     <br>
                     <p class="text-monospace text-justify">
                       Uma versão de nossa plataforma<br> para o seu dispositivo mobile
@@ -501,8 +498,6 @@
            <!--
           BOOTSTRAP LINKS :)
         -->
-        
-        <script src="/src/js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
