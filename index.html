@@ -3,10 +3,10 @@
       <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
-          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-          <link rel="stylesheet" href="../css/main.css">
+
+          <link rel="stylesheet" href="src/css/main.css">
             <title>
               StartWeb
             </title>
@@ -30,10 +30,7 @@
       <header id="topo">
               <nav class="navbar fixed-top navbar-expand-lg d-inline-flex" role="navigation">
                   
-                    <a class="navbar-brand" href="index.html" >
-                      
                     
-                    </a>
                     <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
                     aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="whitesmoke" xmlns="http://www.w3.org/2000/svg">
@@ -52,18 +49,18 @@
                               </svg><br>
                               StartWeb</li></button>
 
-                        <button onclick="document.location='#texto_sobre'" id="button_head" >
+                        <button onclick="document.location='sobre.html'" id="button_head" >
                           <li class="nav-item m-1 p-1">
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-easel-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5h-2zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2z"/>
                             </svg><br>Sobre
                          </li>
                         </button>
-                        <button onclick="document.location='feed.html'" id="button_head" >
+                        <button onclick="document.location='login.php'" id="button_head" >
                           <li class="nav-item m-1 p-1"> 
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
-                            </svg><br>Projetos
+                            </svg><br>Catálogo
                           </li>
                         </button>
                         
@@ -87,7 +84,7 @@
         <!-- AQUI VAI O CONTEÚDO-->
         
         <main>
-          <div class="conteudo">
+          <div class="conteudo pt-5">
           <div role="main">
             <!-- 
               Container Principal 
@@ -95,14 +92,16 @@
               <div class="container-fluid">
                 <div class="container">
                   <div class="row" >                      
-                      <div class="col-12 col-md-7 mt-1 mt-md-1 mt-lg-1 mt-xl-1 mx-auto">
-                        <img class="img-fluid mx-auto" src="../../assets/collaborate-2103904.png" role="img">
+                      <div class="col-12 col-lg-5 col-md-12 mt-1 mt-md-3 mt-lg-3 mt-xl-3 mx-auto pt-lg-5">
+                        <img class="img-fluid mx-auto  d-block" src="assets/collaborate-2103904.png" role="img">
                       </div>
-                      <div class="col-12 col-md-5 mt-md-3 mt-lg-3 mt-xl-3 ">
-                          <h1 class="display-3  mt-md-3 mt-lg-3 mt-xl-3" style="font-size: 70px;">Bem-vindo</h1>
-                  
-                          <h3 class="display-3 " style="font-size: 75px;"> StartWeb</h3> 
-                          <p class="lead mb-3 mt-2 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
+                      <div class="col-12 col-lg-7 col-md-12 mt-md-0 mt-lg-5 mt-xl-5 pyl-5 px-0 pt-xl-5 pt-lg-5 ">
+                        <div class="d-flex flex-column flex-md-row justify-content-center m-0">
+                          <h1 class="display-3  mt-md-4 mt-lg-4 mt-xl-4 mr-lg-2 mr-xl-2" style="font-size: 70px;">Bem-vindo</h1>
+                
+                        <h3 class="display-3 mt-md-4 mt-lg-4 mt-xl-4" style="font-size: 70px;"> StartWeb</h3> 
+                        </div>
+                          <p class="lead mb-3 mt-2 pr-xl-5 pl-xl-5 mb-lg-3 mt-lg-2 mb-xl-3 mt-xl-2 mb-sm-3 mt-sm-2 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
                             venha fazer parte dessa comunidade!  </p>
                             <div class="container-fluid">
                               <div class="d-flex flex-column flex-md-row mb-1 justify-content-center">
@@ -518,7 +517,7 @@
         <footer class="container-footer mx-0">
           <div class="row align-items-center">
             <div class="col"></div>
-                <div class="col-5 align-items-center m-3 mx-0">
+                <div class="col align-items-center m-3">
                   <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
                 </div>
             <div class="col"></div>
@@ -527,7 +526,7 @@
                 <div class="col"></div>
                   <div class="col align-items-center m-3">
                   <span class="text-monospace"> 
-                    Desenvolvido por TR3S GATINHAX(^･ｪ･^)
+                    Desenvolvido por TR3S GATINHAX(^･ｪ･^) - 2020
                   </span>
                 </div>
                 <div class="col"></div>
