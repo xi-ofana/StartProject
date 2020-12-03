@@ -121,10 +121,10 @@
                   <!-- 
                     Container lOGIN e SUGESTOES
                   -->
-                  <div class="container-fluid" id="login">
-                    <div class="container">
+                  <div class="container-fluid" >
+                    <div class="container" id="login">
                         <div class="row">
-                          <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="col-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="row justify-content-md-center mt-5">
                               <div class="col mt-3 mb-2">
                                 <h1 id="login_lab">
@@ -135,44 +135,22 @@
                             <div class="row justify-content-md-center align-items-center flex-column m-4">
                               <div class="col-sm-10 col-sm flex-column-reverse align-content-center justify-content-center">
                                 <form method="POST" action="login.php">
-                                  <div class="input-group mb-4">
-                                      <input name="emaill" type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
+                                  <div class="input-group mb-4 justify-content-center">
+                                      <input name="emaill" type="text" class="form-control col-5" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
                                       <div class="input-group-append">
                                       </div>
                                   </div>
-                                    <div class="input-group mb-4">
-                                      <input name="senhal" type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
+                                    <div class="input-group mb-4 justify-content-center">
+                                      <input name="senhal" type="password" class="form-control col-5" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
                                     </div>
-                                      <button type="submit" class="btn btn-entrar mb-5 col-12 ">
+                                      <button type="submit" class="btn btn-entrar mb-5 col-5 ">
                                         Entrar
                                       </button>
                                   </form>
                                 </div>
                               </div>
                           </div>
-                          <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                            <div class="row justify-content-center mt-md-5 mt-xl-5 mt-lg-5 flex">
-                              <form class="form-group">
-                                <div class="row mb-4 align-content-center justify-content-center">
-                                  <h1 class="display-3 mt-3 mb-3 mb-lg-2" id="login_lab"> 
-                                    Sugestões 
-                                  </h1>
-                                </div>
-                                  <div class="row">
-                                    <div class="col">
-                                      <div class="input-group">
-                                        <div class="input-group-append">
-                                          <textarea type="text" class="form-control mb-2" placeholder="Sugestões (máx.100 caracteres)" maxlength="100" rows="4"></textarea>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex flex-column flex-md-row mb-1 justify-content-center">
-                                    <button type="submit" class="btn btn-primary col-12 m-3">Enviar</button>
-                                    <input type="reset" class="btn btn-danger col-12 m-3"></input>
-                                  </form>
-                                  </div>
-                                </div>
+                          
                           </div>
                         </div>
                 </div>
