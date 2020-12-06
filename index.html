@@ -56,7 +56,7 @@
                             </svg><br>Sobre
                          </li>
                         </button>
-                        <button onclick="document.location='login.php'" id="button_head" >
+                        <button onclick="document.location='lista.php'" id="button_head" >
                           <li class="nav-item m-1 p-1"> 
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
@@ -65,7 +65,7 @@
                         </button>
                         
 
-                      <button type="menu" id="button_head" data-toggle="modal" data-target="#modalCad">
+                      <button type="menu" id="button_head" data-toggle="modal" data-target="#cad_emp">
                         <li class="nav-item m-1 p-1">
                           
                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
@@ -195,159 +195,6 @@
               </div>
               
               <!--
-                MODAL INICIAL
-              -->
-              
-                <div class="modal fade" id="modalCad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="text-danger">Atenção!</h3>
-                        
-                      </div>
-                      <div class="modal-body">
-                        <div class="row-sm">
-                          <p class="m-3" type="form-text" style="font-size: 18px;">
-                              Para iniciar o cadastro precisamos saber qual tipo de conta você gostaria de criar:
-                          </p>
-                          <div class="row">
-                            <div class="col-sm">
-                              <div class="card m-3">
-                                <div class="card-header">Conta Empresarial</div>
-                                <div class="align-content-center">
-                                  <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-building rounded mx-auto d-block mt-2 mb-1" fill="#89d7ef" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-                                  </svg>
-                                </div>
-                                <label class="card-text ml-3 mr-3 mt-1">Possui uma startup na Região do Alto Tietê e deseja divulga-la</label>
-                                <button class="btn btn-entrar m-3" data-toggle="modal" data-target="#cad_emp" data-dismiss="modal"><a>
-                                  Conta Empresarial</a>
-                                  
-                                </button>
-                              </div>  
-                            </div>
-                            <div class="col-sm">
-                              <div class="card m-3" >
-                                <div class="card-header">Conta Profissional</div>
-                                    <div class="align-content-center">
-                                    <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-people rounded mx-auto d-block m-2" fill="#89d7ef" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-                                    </svg>
-                                </div>
-                                  <label class="card-text ml-3 mr-3 mt-1">Deseja apoiar e conhecer startups da Região do Alto Tietê</label>
-                                  <button class="btn btn-entrar justify-content-center m-3" data-toggle="modal" data-target="#cad_prof" data-dismiss="modal"><a>Conta Profissional</a>
-                                  </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-danger" type="button" data-dismiss="modal">Fechar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 
-                MODAL CAD PROFISSIONAL
-              -->  
-
-              <div class="modal fade"id="cad_prof" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"> 
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Cadastro Usuário Profissional</h5>
-                      
-                    </div>
-                    <div class="modal-body">
-                      <div class="container-fluid">
-                        
-                        <label class="text-decoration-none">
-                          Preencha com suas informações:
-                        </label>
-                        <!--
-                          Formulario cadastro
-                        -->
-                          <form class="needs-validation" action="cadastrarp.php" method="POST">
-                            <div class="row mt-1">
-                              <div class="col">
-                                <input name="campo" type="text" class="form-control" placeholder="Nome" required>
-                              </div>
-                              <div class="col">
-                                <input name="campo"type="text" class="form-control" placeholder="Sobrenome" required>
-                              </div>
-                            </div>
-                            
-
-                            <div class="row">
-                              
-                              <div class="col">
-                                <label class="form-text">Data de nascimento:</label>
-                                <input name="campo" type="date" class="form-control" class="col-5" min="1900-01-01" max="2004-12-31" required>
-                                
-                                <label class="form-text">Telefone: </label>
-                                  
-                                <input type="tel" class="form-control phone-ddd-mask" id="inputTel" placeholder="ex: (DDD)0000-0000" maxlength="12" required>
-                              </div>
-                                
-                            
-                              <div class="col">
-                                <label class="form-text">Genêro: </label>
-                                  <div class="custom-control custom-radio" >
-                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
-                                    <label class="custom-control-label" for="customRadio1">Feminino</label>
-                                  </div>
-                                  <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Masculino</labe>
-                                  </div>
-                                  <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio3">Prefiro não informar</label>
-                                  </div>
-                                  <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio4">Outro</label>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="row mt-1">
-                                    <div class="col-6">
-                                      <label class="form-text">CPF: </label>
-                                      <input type="text" class="form-control cpf-mask" id="cpf" placeholder="000.000.000-00"
-                                       data-mask="000.000.000.00" maxlength="11" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
-                                      required autocomplete="off" aria-required="true">
-                                    </div>
-                                  <div class="col-6">
-                                    <label class="form-text">E-mail:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="ex: fulano@gmail.com" aria-required="true">
-
-                                  </div>
-                            </div>
-                            <div class="row mt=1">
-                              <div class="col-6">
-                                <label class="form-text">Senha: </label>
-                                <input type="password" class="form-control" minlength="8" required>
-                              </div>
-                              <div class="col-6">
-                                <label class="form-text">Confirmar senha: </label>
-                                <input type="password" class="form-control" minlength="8" required>
-                              </div>
-                            </div>
-                        <div class="modal-footer m-3">
-                          <button type="reset" class="btn btn-google"><a data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</a></button>
-                          <button type="submit" class="btn btn-primary">Cadastrar</button>
-                         
-                        </div>
-                      </form>
-                    </div> 
-                    </div>
-              </div>
-              </div>
-              </div>
-              <!--
                 MODAL CAD EMPRESARIAL
               -->
               <div class="modal fade" id="cad_emp" tabindex="-1" role="dialog">
@@ -416,7 +263,7 @@
                             </div>
                             <div class="col-md">
                               <label class="form-text">Fundação: </label>
-                              <input name="fundac" type="date" class="form-control" max="2020-11-01" required>
+                              <input name="fundac" type="date" class="form-control" max="1999-11-01" required>
                             </div>
 
                           </div>
@@ -472,7 +319,7 @@
                       <div class="row">
                         <div class="col">
                           <label class="form-text">Descrição</label>
-                          <textarea class="form-control" name="descricao" maxlength="200"></textarea>
+                          <textarea class="form-control" name="descricao" maxlength="500"></textarea>
                         </div>
                       </div>
 
