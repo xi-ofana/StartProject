@@ -69,7 +69,16 @@
                           </li>
                         </button>
                         
-
+                        <button type="menu" id="button_head" data-toggle="modal" data-target="#projetos">
+                          <li class="nav-item m-1 p-1">
+                            
+                        <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-journals" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
+                          <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg><br>
+                        Projetos
+                          </li>
+                        </button>
                       
                       </ul>
                   </div>
@@ -128,6 +137,39 @@
 </div>
 </div>
 <hr>
+<div class="modal fade" id="projetos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                       <div class="container-sm">
+                        <label class="form-text">
+                          Preencha para adicionar um projeto: 
+                        </label>
+                        <input type="text" class="form-control mb-1" placeholder="Nome do projeto">
+                        <label class="form-text mb-1">Descrição do projeto: </label>
+                        <textarea class="form-control mt-1 mb-1" maxlength="500" placeholder="Descrição"></textarea>
+                        <label class="form-text mb-1 mt-1">Autor: </label>
+                        <input type="text" class="form-control mt-1 mb-1">
+                        <label class="form-text mt-1 mb-1">Telefone do projeto: </label>
+                        <input type="tel" class="form-control phone-ddd-mask mt-1 mb-1" placeholder="(DDD)0000-0000">
+                        <label class="form-text mb-1 mt-1">Email: </label>
+                        <input type="email" class="form-control mt-1 mb-1">
+
+                       </div>
+                      </div>
+                      <div class="modal-footer m-3">
+                        <button type="button" class="btn btn-google" data-dismiss="modal">Voltar</button>
+                        <button type="submit" class="btn btn-primary" >Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 		<!--
           RODAPÉ
         -->
