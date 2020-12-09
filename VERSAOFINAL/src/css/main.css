@@ -1,0 +1,222 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+    
+    hr{
+        color: white;
+    }
+    .border{
+        color: white;
+    }
+    .container-fluid{
+        width: 100%;
+    
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    p{
+        font-family: Helvetica,;
+    }
+
+   /* HEADER
+
+   */
+
+
+    a{
+        color: #378fac;
+        text-align: center;
+    }
+    a:hover{
+        color: #89d7ef;
+    }
+
+    #button_head{
+        border: thin;
+        border-color: whitesmoke;
+        background: #89d7ef;
+        color: whitesmoke;
+        font-size: 25px;
+        width: 45%;
+        height: 45%;
+
+    }
+    #button_head:checked{
+        border: transparent;
+    }
+    #button_head:hover{
+        font-weight: normal;
+        background: whitesmoke;
+        text-decoration-color: #89d7ef;
+        color: #89d7ef;
+        border: transparent;
+        width: 45%;
+        height: 45%;
+        
+    }
+    #button_2 {
+        border: transparent;
+        background: #89d7ef;
+        font-size: 25px;
+        
+    }
+    .navbar{
+        background-color: #89d7ef;
+        color: whitesmoke;
+    }
+    .navbar-toggler-icon{
+        border: whitesmoke
+    }
+/* CONTEUDO 
+
+*/
+    
+    #texto_sobre{
+        font-weight: bolder;
+        text-align: center;
+        font-family: Helvetica;
+        background-color: whitesmoke;
+        align-content: center;
+        
+    }
+    h3{
+        color:#89d7ef;
+    }
+    h1{
+        color: #378fac;
+    }
+    #login{
+        align-self: center;
+        text-align: center;
+        scroll-snap-align: center;
+        font-family: helvetica;
+        align-content: center;
+        background-color: white;
+        border-color: whitesmoke;
+        color: #378fac;
+
+    }
+    #login_lab{
+        font-family: Helvetica;
+        color: #378fac;
+        align-content: center;
+        font-size: 30px;
+    }
+    .input{
+        border-color: transparent;
+    }
+    .pass-box{
+        width: 400px;
+        border-color: transparent;
+    }
+    .btn-entrar{
+        background-color: #378fac;
+        color: whitesmoke;
+        border-color: transparent;
+    }
+    .btn-face{
+        background-color: #21567e;
+        color: whitesmoke;
+        border-color: transparent;
+        
+    }
+    .btn-google{
+        background-color: #f893a3;
+        color: whitesmoke;
+        
+        border-color: transparent;
+    }
+    #cadastro{
+        background-color: #89d7ef;
+
+    }
+    #inferior{
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+/* RODAPÉ 
+
+*/
+#container-footer{
+    align-self: center;
+    align-items: center;
+    background-color: #89d7ef;
+    bottom: 0;
+    color: #378fac;
+    
+}
+
+  /* ini: Preloader */
+ 
+  #preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #89d7ef; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+/* end: Preloader */
+.suges{
+    font-weight: normal;
+}
+
+/*
+SOBRE 
+
+*/
+#sobre{
+    background-color: white;
+}

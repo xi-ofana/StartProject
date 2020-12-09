@@ -1,0 +1,649 @@
+ 
+ 
+ <!DOCTYPE html>
+ <html lang="pt-br">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+           <link rel="stylesheet" href="src/css/main.css">
+             <title>
+               StartWeb - Sobre
+             </title>
+       </head>
+     <body>
+       <!--
+         Pre-loader
+       -->
+       <!-- início do preloader -->
+       <div id="preloader">
+           <div class="inner">
+             <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+             <div class="bolas">
+                 <div></div>
+                 <div></div>
+                 <div></div>                    
+             </div>
+           </div>
+       </div>
+       <!--- 
+        TODO O HEADER (CABEÇALHO) DA PÁGINA --->
+       <header id="topo"> 
+               <nav class="navbar fixed-top navbar-expand-lg d-inline-flex" role="navigation">
+                   
+                    
+                     <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
+                     aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="whitesmoke" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                     </svg>
+                     </button>
+ 
+                     <div class=" collapse navbar-collapse" id="conteudoNavbarSuportado">
+ 
+                           <ul class="navbar-nav mr-auto">
+                             <button onclick="document.location='index.html'" id="button_head">
+                             <li class="navbar-item p-2 mx-auto">
+                               <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                 <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                               </svg><br>
+                               StartWeb</li></button>
+ 
+                         <button onclick="document.location='sobre.html'" id="button_head" >
+                           <li class="nav-item m-1 p-1">
+                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-easel-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5h-2zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2z"/>
+                             </svg><br>Sobre
+                          </li>
+                         </button>
+                         <button onclick="document.location='login.php'" id="button_head" >
+                           <li class="nav-item m-1 p-1"> 
+                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
+                             </svg><br>Catálogo
+                           </li>
+                         </button>
+                         
+ 
+                       <button type="menu" id="button_head" data-toggle="modal" data-target="#modalCad">
+                         <li class="nav-item m-1 p-1">
+                           
+                           <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
+                             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                           </svg><br>
+                           Cadastro
+                         </li>
+                           
+                         </button>
+                         <button type="menu" id="button_head" data-toggle="modal" data-target="#projetos">
+                          <li class="nav-item m-1 p-1">
+                            
+                        <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-journals" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
+                          <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg><br>
+                        Projetos
+                          </li>
+                        </button>
+                       </ul>
+                   </div>
+               </nav>
+         
+         </header>
+         <main class="pt-lg-5 pt-md-5 pt-xl-5 pt-5 ">
+           <!-- 
+             PORQUE 
+            -->
+            <div class="container-fluid pt-xl-5 pt-lg-5" >
+                <div class="row mb-0 ml-0 mr-0 mt-0 mb-md-1 ml-md-3 mr-md-3 mb-lg-3 ml-lg-3 mr-lg-3 mb-xl-3 ml-xl-3 mr-xl-3 pt-lg-3 pt-sm-3 pt-md-3">
+                    <div class="col mb-0 ml-0 mr-0 mt-0 mb-md-1 ml-md-3 mr-md-3 mb-lg-1 ml-lg-3 mr-lg-3 mb-xl-1 ml-xl-3 mr-xl-3 pt-lg-3 pt-sm-3 pt-md-3">
+                      <h1 class="display-4 text-center mb-5 mt-5">
+                        Por que startups?</h1>
+                      <p class="lead text-center mb-5" style="font-size: 30px; color: #379fac;">
+                        As startups, de acordo com pesquisas, são projetos que estão atreladas as indústrias 4.0,
+                         sendo esse termo utilizado por estudos que garantem a possibilidade de uma quarta revolução industrial,
+                         que foram as inovações dentro do mercado influenciada pelo capitalismo.
+                         Estudos apontam que grande parte das empresas já negociam com startups, porém
+                         há também uma grande parte das startups que encerram suas atividades por conta da visibilidade.                    
+                    
+                      </p>
+                    </div>
+                </div>
+                          <!-- 
+                            QUEM SOMOS
+                          --> 
+                <div class="row d-flex mb-3 ml-0 mr-0 mt-0 mb-md-0 ml-md-3 mr-md-3 mb-lg-0 ml-lg-3 mr-lg-3 mb-xl-0 ml-xl-3 mr-xl-3" style="background-color: white;">
+                    <div class="col">
+                      <h1 class="display-4 mt-5 text-center mb-4">
+                      Quem somos nós?
+                    </h1>
+                        <p class="lead text-center mb-5" style="font-size: 30px; color: #379fac;">Somos uma equipe que surgiu na elaboração de um trabalho de conclusão de curso e na observação
+                           do empreendedorismo dentro do Alto Tietê, percebemos que a visibilidade e conhecimento de startups era um infortúnio, 
+                          decidindo então criar este meio de comunicação e de oportunidade implementando a cultura do empreendedorismo na região do Alto Tietê.  
+                        </p>
+                      
+                </div>
+            </div>
+            <div class="row d-inline mt-3">
+              <div class="row d-flex d-inline justify-content-center ml-0 mr-0 mt-0 mb-md-1 ml-md-3 mr-md-3 mb-lg-1 ml-lg-3 mr-lg-3 mb-xl-1 ml-xl-3 mr-xl-3">
+                    <div class="col-12 col-sm-3 col-lg-3 col-xl-3">
+                        <p class="text-center"><img  class="rounded-circle img-thumbnail mb-3"src="assets/ange.jpg">  
+                        <p class="text-center" style="font-size: 20px; color:#378fac;">Angela Santiago<br>
+                        Técnica em Informática</p>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 col-xl-3 ">
+                      <p class="text-center"><img class="rounded-circle img-thumbnail mb-3" src="assets/milly.jpg"></p>
+                      <p class="text-center" style="font-size: 20px; color:#378fac;">Camilly de Castro<br>Técnica em Informática</p>
+                    </div>
+                  <div class="col-12 col-sm-3 col-lg-3 col-xl-3">
+                    <p class="text-center"><img src="assets/gi.jpg" class="rounded-circle img-thumbnail mb-3"></p>
+                    <p class="text-center" style="font-size: 20px; color:#378fac;">Giovana Santos<br>Técnica Informática</p>
+                  </div>
+              </div>
+            </div>
+          <hr>
+         <div class="container-fluid mx-3" id="inferior" style="padding: 10px;">
+            <div class="row  p-5">
+              <div class="col-lg-6 col-sm-12  justify-content-center align-content-center mb-1">
+                  <span class="text-monospace" style="color: #378fac;">
+                    Fale Conosco:<br> 
+                    startapp@gmail.com
+                  </span>
+                
+              </div>
+              
+              <!-- 
+                  Infomação anntes do rodapé
+              -->
+              <div class="col-lg-6 col-sm-12 justify-content-center align-content-center mb-1 ">
+                <spa class="text-monospace" style="color: #379fac;">
+                  EM BREVE
+                </spa>
+                <br>
+                <p class="text-monospace text-justify">
+                  Uma versão de nossa plataforma<br> para o seu dispositivo mobile
+                </p>
+
+              </div>
+            </div>
+            <hr>
+          </div>
+          
+          <!--
+            MODAL INICIAL
+          -->
+          
+            <div class="modal fade" id="modalCad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="text-danger">Atenção!</h3>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <div class="row-sm">
+                      <p class="m-3" type="form-text" style="font-size: 18px;">
+                          Para iniciar o cadastro precisamos saber qual tipo de conta você gostaria de criar:
+                      </p>
+                      <div class="row">
+                        <div class="col-sm">
+                          <div class="card m-3">
+                            <div class="card-header">Conta Empresarial</div>
+                            <div class="align-content-center">
+                              <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-building rounded mx-auto d-block mt-2 mb-1" fill="#89d7ef" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                              </svg>
+                            </div>
+                            <label class="card-text ml-3 mr-3 mt-1">Possui uma startup na Região do Alto Tietê e deseja divulga-la</label>
+                            <button class="btn btn-entrar m-3" data-toggle="modal" data-target="#cad_emp" data-dismiss="modal"><a>
+                              Conta Empresarial</a>
+                              
+                            </button>
+                          </div>  
+                        </div>
+                        <div class="col-sm">
+                          <div class="card m-3" >
+                            <div class="card-header">Conta Profissional</div>
+                                <div class="align-content-center">
+                                <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-people rounded mx-auto d-block m-2" fill="#89d7ef" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                </svg>
+                            </div>
+                              <label class="card-text ml-3 mr-3 mt-1">Deseja apoiar e conhecer startups da Região do Alto Tietê</label>
+                              <button class="btn btn-entrar justify-content-center m-3" data-toggle="modal" data-target="#cad_prof" data-dismiss="modal"><a>Conta Profissional</a>
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 
+            MODAL CAD PROFISSIONAL
+          -->  
+
+          <div class="modal fade"id="cad_prof" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cadastro Usuário Profissional</h5>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    
+                    <label class="text-decoration-none">
+                      Preencha com suas informações:
+                    </label>
+                    <!--
+                      Formulario cadastro
+                    -->
+                      <form class="needs-validation" method="POST">
+                        <div class="row mt-1">
+                          <div class="col">
+                            <input name="campo" type="text" class="form-control" placeholder="Nome" required>
+                          </div>
+                          <div class="col">
+                            <input name="campo"type="text" class="form-control" placeholder="Sobrenome" required>
+                          </div>
+                        </div>
+                        
+
+                        <div class="row">
+                          
+                          <div class="col">
+                            <label class="form-text">Data de nascimento:</label>
+                            <input name="campo" type="date" class="form-control" class="col-5" min="1900-01-01" max="2004-12-31" required>
+                            
+                            <label class="form-text">Telefone: </label>
+                              
+                            <input type="tel" class="form-control phone-ddd-mask" id="inputTel" placeholder="ex: (DDD)0000-0000" maxlength="12" required>
+                          </div>
+                            
+                        
+                          <div class="col">
+                            <label class="form-text">Genêro: </label>
+                              <div class="custom-control custom-radio" >
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
+                                <label class="custom-control-label" for="customRadio1">Feminino</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Masculino</labe>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Prefiro não informar</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio4">Outro</label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row mt-1">
+                                <div class="col-6">
+                                  <label class="form-text">CPF: </label>
+                                  <input type="text" class="form-control cpf-mask" id="cpf" placeholder="000.000.000-00"
+                                   data-mask="000.000.000.00" maxlength="11" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
+                                  required autocomplete="off" aria-required="true">
+                                </div>
+                              <div class="col-6">
+                                <label class="form-text">E-mail:</label>
+                                <input type="email" class="form-control" id="email" placeholder="ex: fulano@gmail.com" aria-required="true">
+
+                              </div>
+                        </div>
+                        <div class="row mt=1">
+                          <div class="col-6">
+                            <label class="form-text">Senha: </label>
+                            <input type="password" class="form-control" minlength="8" required>
+                          </div>
+                          <div class="col-6">
+                            <label class="form-text">Confirmar senha: </label>
+                            <input type="password" class="form-control" minlength="8" required>
+                          </div>
+                        </div>
+                    <div class="modal-footer m-3">
+                      <button type="reset" class="btn btn-google"><a data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</a></button>
+                      <button type="submit" class="btn btn-primary">Cadastrar</button>
+                     
+                    </div>
+                  </form>
+                </div> 
+                </div>
+          </div>
+          </div>
+          </div>
+          <!--
+            MODAL CAD EMPRESARIAL
+          -->
+          <div class="modal fade"id="cad_prof" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cadastro Usuário Profissional</h5>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    
+                    <label class="text-decoration-none">
+                      Preencha com suas informações:
+                    </label>
+                    <!--
+                      Formulario cadastro
+                    -->
+                      <form class="needs-validation" action="cadastrarp.php" method="POST">
+                        <div class="row mt-1">
+                          <div class="col">
+                            <input name="campo" type="text" class="form-control" placeholder="Nome" required>
+                          </div>
+                          <div class="col">
+                            <input name="campo"type="text" class="form-control" placeholder="Sobrenome" required>
+                          </div>
+                        </div>
+                        
+
+                        <div class="row">
+                          
+                          <div class="col">
+                            <label class="form-text">Data de nascimento:</label>
+                            <input name="campo" type="date" class="form-control" class="col-5" min="1900-01-01" max="2004-12-31" required>
+                            
+                            <label class="form-text">Telefone: </label>
+                              
+                            <input type="tel" class="form-control phone-ddd-mask" id="inputTel" placeholder="ex: (DDD)0000-0000" maxlength="12" required>
+                          </div>
+                            
+                        
+                          <div class="col">
+                            <label class="form-text">Genêro: </label>
+                              <div class="custom-control custom-radio" >
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
+                                <label class="custom-control-label" for="customRadio1">Feminino</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Masculino</labe>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Prefiro não informar</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio4">Outro</label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row mt-1">
+                                <div class="col-6">
+                                  <label class="form-text">CPF: </label>
+                                  <input type="text" class="form-control cpf-mask" id="cpf" placeholder="000.000.000-00"
+                                   data-mask="000.000.000.00" maxlength="11" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
+                                  required autocomplete="off" aria-required="true">
+                                </div>
+                              <div class="col-6">
+                                <label class="form-text">E-mail:</label>
+                                <input type="email" class="form-control" id="email" placeholder="ex: fulano@gmail.com" aria-required="true">
+
+                              </div>
+                        </div>
+                        <div class="row mt=1">
+                          <div class="col-6">
+                            <label class="form-text">Senha: </label>
+                            <input type="password" class="form-control" minlength="8" required>
+                          </div>
+                          <div class="col-6">
+                            <label class="form-text">Confirmar senha: </label>
+                            <input type="password" class="form-control" minlength="8" required>
+                          </div>
+                        </div>
+                    <div class="modal-footer m-3">
+                      <button type="reset" class="btn btn-google"><a data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</a></button>
+                      <button type="submit" class="btn btn-primary">Cadastrar</button>
+                     
+                    </div>
+                  </form>
+                </div> 
+                </div>
+          </div>
+          </div>
+          </div>
+          <!--
+            MODAL CAD EMPRESARIAL
+          -->
+          <div class="modal fade" id="cad_emp" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">
+                  Cadastro Usuário Empresarial
+                </h5>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <label class="text-decoration-none">
+                    Preencha com as informações:
+                  </label>
+                  <!-- 
+                    Formulario cadastro
+                  -->
+                  <form id="form-emp" class="needs-validation" action = "cadastrar.php" method="POST" enctype="multipart/form-data">
+                    <div class="row mt-1">
+                      <div class="col">
+                        <input type="text" name="campoNome" class="form-control" placeholder="Nome fantasia" required>
+                      </div>
+                      <div class="col">
+                        <input type="text" name="razao" class="form-control" placeholder="Razão social" required> 
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm">
+                      
+                        <label class="form-text">
+                          Segmento:
+                        </label>
+                      
+                      <select name="segmento" class="form-control">
+                        <option>Fintech</option>  
+                        <option>Legaltech</option>
+                        <option>Healthtech</option>  
+                        <option>Adtech</option>
+                        <option>Agtech</option>  
+                        <option>Edtech</option>
+                        <option>Marttech</option>  
+                        <option>Outro</option>
+                      </select>  
+                      </div>
+                  </div>
+
+                  <div class="row mt-1">
+                    <div class="col-sm">
+                      
+                        <label class="form-text">Número de funcionários</label>
+                        <input type="text" name="funcionarios" class="form-control" required>
+                      </div>
+                    </div>    
+
+                  <label class="form-text">Logotipo: </label>
+                    <input type="file" class="form-control" name="logotipo"/>
+
+
+                      <div class="row mt-1">
+                        <div class="col-md">
+                          
+                      <label class="form-text ">CNPJ:</label>
+                      <input name="cnpj" type="text" class="form-control" placeholder="00.000.000/0000-00" data-mask="00.000.000/0000-00" required>
+
+                        </div>
+                        <div class="col-md">
+                          <label class="form-text">Fundação: </label>
+                          <input name="fundac" type="date" class="form-control" max="2020-11-01" required>
+                        </div>
+
+                      </div>
+                      <div class="row mt-1">
+                        
+                        <div class="col-md">
+                          <label class="form-text">Endereço: </label>
+                          <input name="endEmp" type="text reset" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-md">
+                          <label class="form-text">Número (e/ou complemento):</label>
+                          <input name="numero" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md">
+                          <label class="form-text" required>Cidade: </label>
+                          <select class="form-control" name="cidade">
+                            <option>Arujá</option>
+                            <option>Biritiba-Mirim</option>
+                            <option>Ferraz de Vasconcelos</option>
+                            <option>Guararema</option>
+                            <option>Guarulhos</option>
+                            <option>Itaquaquecetuba</option>
+                            <option>Mogi das Cruzes</option>
+                            <option>Poá</option>
+                            <option>Salesópolis</option>
+                            <option>Santa Isabel</option>
+                            <option>Suzano</option>
+                            <option>Outra</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-sm">
+                      <label class="form-text">Telefone</label>
+                      <input type="tel" class="form-control phone-ddd-mask" name="telefone" placeholder="ex: (DDD)0000-0000" required>
+                    </div>
+                    <div class="col-sm">
+                      
+                      <label class="form-text">E-mail</label>
+                      <input type="email" class="form-control" name="email" placeholder="ex: empresa@gmail.com" required>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-sm">
+                      <label class="form-text">Senha: </label>
+                      <input type="password" class="form-control" name="senha" minlength="8" required>
+                    </div>
+                    <div class="col-sm">
+                      <label class="form-text">Confirmar senha: </label>
+                      <input type="password" class="form-control" name="confsenha" minlength="8" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label class="form-text">Descrição</label>
+                      <textarea class="form-control" name="descricao" maxlength="200"></textarea>
+                    </div>
+                  </div>
+
+                    
+                  </div>
+                </div>
+              <div class="modal-footer m-3">
+                <button type="button" class="btn btn-google reset" data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                
+                </form>
+              </div>
+</div>
+</div>
+            </div>
+            <!-- 
+                  MODAL PROJETOS
+                -->
+                <div class="modal fade" id="projetos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                       <div class="container-sm">
+                        <label class="form-text">
+                          Preencha para adicionar um projeto: 
+                        </label>
+                        <input type="text" class="form-control mb-1" placeholder="Nome do projeto">
+                        <label class="form-text mb-1">Descrição do projeto: </label>
+                        <textarea class="form-control mt-1 mb-1" maxlength="500" placeholder="Descrição"></textarea>
+                        <label class="form-text mb-1 mt-1">Autor: </label>
+                        <input type="text" class="form-control mt-1 mb-1">
+                        <label class="form-text mt-1 mb-1">Telefone do projeto: </label>
+                        <input type="tel" class="form-control phone-ddd-mask mt-1 mb-1" placeholder="(DDD)0000-0000">
+                        <label class="form-text mb-1 mt-1">Email: </label>
+                        <input type="email" class="form-control mt-1 mb-1">
+
+                       </div>
+                      </div>
+                      <div class="modal-footer m-3">
+                        <button type="button" class="btn btn-google" data-dismiss="modal">Voltar</button>
+                        <button type="submit" class="btn btn-primary" >Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </main>
+         
+         <!--
+          RODAPÉ
+        -->
+        <footer class="container-footer mx-0">
+            <div class="row align-items-center">
+              <div class="col"></div>
+                  <div class="col align-items-center m-3">
+                    <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
+                  </div>
+              <div class="col"></div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col"></div>
+                    <div class="col align-items-center m-3">
+                    <span class="text-monospace"> 
+                      Desenvolvido por TR3S GATINHAX(^･ｪ･^) - 2020
+                    </span>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                
+                
+  
+             <!--
+            BOOTSTRAP LINKS :)
+          -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+          <!--
+            JAVASCRIPT DO PRE-LOADER
+          -->
+          <script>
+  
+            //<![CDATA[
+            $(window).on('load', function () {
+              $('#preloader .inner').fadeOut();
+              $('#preloader').delay(350).fadeOut('slow'); 
+              $('body').delay(350).css({'overflow': 'visible'});
+            })
+            //]]>
+            
+            </script>
+        
+          
+        </footer> 
+      </body>
+  </html>

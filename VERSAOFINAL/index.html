@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+          <link rel="stylesheet" href="src/css/main.css">
+            <title>
+              StartWeb
+            </title>
+      </head>
+    <body>
+      <!--
+        Pre-loader
+      -->
+      <!-- início do preloader -->
+      <div id="preloader">
+          <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>                    
+            </div>
+          </div>
+      </div>
+      <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
+      <header id="topo">
+              <nav class="navbar fixed-top navbar-expand-lg d-inline-flex" role="navigation">
+                  
+                    
+                    <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="whitesmoke" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    </button>
+
+                    <div class=" collapse navbar-collapse" id="conteudoNavbarSuportado">
+
+                          <ul class="navbar-nav mr-auto">
+                            <button onclick="document.location='index.html'" id="button_head">
+                            <li class="navbar-item p-2 mx-auto">
+                              <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                              </svg><br>
+                              StartWeb</li></button>
+
+                        <button onclick="document.location='sobre.html'" id="button_head" >
+                          <li class="nav-item m-1 p-1">
+                            <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-easel-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5h-2zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2z"/>
+                            </svg><br>Sobre
+                         </li>
+                        </button>
+                        <button onclick="document.location='lista.php'" id="button_head" >
+                          <li class="nav-item m-1 p-1"> 
+                            <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
+                            </svg><br>Catálogo
+                          </li>
+                        </button>
+                        
+
+                      <button type="menu" id="button_head" data-toggle="modal" data-target="#cad_emp">
+                        <li class="nav-item m-1 p-1">
+                          
+                          <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
+                            <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                          </svg><br>
+                          Cadastro
+                        </li>
+                          
+                        </button>
+
+                        <button type="menu" id="button_head" data-toggle="modal" data-target="#projetos">
+                          <li class="nav-item m-1 p-1">
+                            
+                        <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-journals" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
+                          <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg><br>
+                        Projetos
+                          </li>
+                        </button>
+                      
+                      </ul>
+                  </div>
+              </nav>
+        
+        </header>
+        <!-- AQUI VAI O CONTEÚDO-->
+        
+        <main>
+          <div class="conteudo pt-5">
+          <div role="main">
+            <!-- 
+              Container Principal 
+            -->
+              <div class="container-fluid">
+                <div class="container">
+                  <div class="row" >                      
+                      <div class="col-12 col-lg-5 col-md-12 mt-1 mt-md-3 mt-lg-3 mt-xl-3 mx-auto pt-lg-5">
+                        <img class="img-fluid mx-auto  d-block" src="assets/collaborate-2103904.png" role="img">
+                      </div>
+                      <div class="col-12 col-lg-7 col-md-12 mt-md-0 mt-lg-5 mt-xl-5 pyl-5 px-0 pt-xl-5 pt-lg-5 ">
+                        <div class="d-flex flex-column flex-md-row justify-content-center m-0">
+                          <h1 class="display-3  mt-md-4 mt-lg-4 mt-xl-4 mr-lg-2 mr-xl-2" style="font-size: 70px;">Bem-vindo</h1>
+                
+                        <h3 class="display-3 mt-md-4 mt-lg-4 mt-xl-4" style="font-size: 70px;"> StartWeb</h3> 
+                        </div>
+                          <p class="lead mb-3 mt-2 pr-xl-5 pl-xl-5 mb-lg-3 mt-lg-2 mb-xl-3 mt-xl-2 mb-sm-3 mt-sm-2 text-justify" style="font-size: 25px; color: #379fac;">A plataforma web de divulgação de Startups da região do Alto Tietê, 
+                            venha fazer parte dessa comunidade!  </p>
+                            <div class="container-fluid">
+                              <div class="d-flex flex-column flex-md-row mb-1 justify-content-center">
+                                
+                                  <button class="btn btn-entrar m-3" onclick="document.location='#login'">Realizar Login</button>
+                                
+                                
+                                  <button class="btn btn-google m-3" data-toggle="modal" data-target="#cad_emp">Realizar cadastro</button>
+                        
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                  <!-- 
+                    Container lOGIN e SUGESTOES
+                  -->
+                  <div class="container-fluid" >
+                    <div class="container" id="login">
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="row justify-content-md-center mt-5">
+                              <div class="col mt-3 mb-2">
+                                <h1 id="login_lab">
+                                  Login
+                                </h1>
+                              </div>
+                            </div>
+                            <div class="row justify-content-md-center align-items-center flex-column m-4">
+                              <div class="col-sm-10 col-sm flex-column-reverse align-content-center justify-content-center">
+                                <form method="POST" action="login.php">
+                                  <div class="input-group mb-4 justify-content-center">
+                                      <input name="emaill" type="text" class="form-control col-12" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2" id="email_log">
+                                      <div class="input-group-append">
+                                      </div>
+                                  </div>
+                                    <div class="input-group mb-4 justify-content-center">
+                                      <input name="senhal" type="password" class="form-control col-12" placeholder="Senha" aria-describedby="basic-addon2" id="senha_log">
+                                    </div>
+                                      <button type="submit" class="btn btn-entrar mb-5 col-7 ">
+                                        Entrar
+                                      </button>
+                                  </form>
+                                </div>
+                              </div>
+                          </div>
+                          
+                          </div>
+                        </div>
+                </div>
+                </div>
+              </div>
+            
+            <!--
+              Espaço para anuncios1
+            -->
+            <div class="container-fluid">
+            </div>
+            
+              <!--
+                PARTE DE INFORMAÇÕES ANTES DO RODAPÉ
+              -->
+              <div class="container-fluid mx-3" id="inferior" style="padding: 10px;">
+                <div class="container">
+                <div class="row  p-5">
+                  <div class="col-lg-6 col-sm-12  justify-content-center align-content-center mb-1">
+                      <span class="text-monospace" style="color: #378fac;">
+                        Fale Conosco:<br> 
+                        startapp@gmail.com
+                      </span>
+                    
+                  </div>
+                  
+                  
+                  <div class="col-lg-6 col-sm-12 justify-content-center align-content-center mb-1 ">
+                    <spa class="text-monospace" style="color: #379fac;">
+                      EM BREVE
+                    </spa>
+                    <br>
+                    <p class="text-monospace text-justify">
+                      Uma versão de nossa plataforma<br> para o seu dispositivo mobile
+                    </p>
+
+                  </div>
+                </div>
+                
+              </div><hr>
+              </div>
+              
+              <!--
+                MODAL CAD EMPRESARIAL
+              -->
+              <div class="modal fade" id="cad_emp" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">
+                      Cadastro Usuário Empresarial
+                    </h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <label class="text-decoration-none">
+                        Preencha com as informações:
+                      </label>
+                      <!-- 
+                        Formulario cadastro
+                      -->
+                      <form id="form-emp" class="needs-validation" action = "cadastrar.php" method="POST" enctype="multipart/form-data">
+                        <div class="row mt-1">
+                          <div class="col">
+                            <input type="text" name="campoNome" class="form-control" placeholder="Nome fantasia" required>
+                          </div>
+                          <div class="col">
+                            <input type="text" name="razao" class="form-control" placeholder="Razão social" required> 
+                          </div>
+                        </div>
+                        <div class="row mt-1">
+                          <div class="col-sm">
+                          
+                            <label class="form-text">
+                              Segmento:
+                            </label>
+                          
+                          <select name="segmento" class="form-control">
+                            <option>Fintech</option>  
+                            <option>Legaltech</option>
+                            <option>Healthtech</option>  
+                            <option>Adtech</option>
+                            <option>Agtech</option>  
+                            <option>Edtech</option>
+                            <option>Marttech</option>  
+                            <option>Outro</option>
+                          </select>  
+                          </div>
+                      </div>
+
+                      <div class="row mt-1">
+                        <div class="col-sm">
+                          
+                            <label class="form-text">Número de funcionários</label>
+                            <input type="text" name="funcionarios" class="form-control" required>
+                          </div>
+                        </div>    
+
+                      <label class="form-text">Logotipo: </label>
+                        <input type="file" class="form-control-file" name="logotipo"/>
+
+
+                          <div class="row mt-1">
+                            <div class="col-md">
+                              
+                          <label class="form-text ">CNPJ:</label>
+                          <input name="cnpj" type="text" class="form-control" placeholder="00.000.000/0000-00" data-mask="00.000.000/0000-00" required>
+
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text">Fundação: </label>
+                              <input name="fundac" type="date" class="form-control" min="1999-11-01" required>
+                            </div>
+
+                          </div>
+                          <div class="row mt-1">
+                            
+                            <div class="col-md">
+                              <label class="form-text">Endereço: </label>
+                              <input name="endEmp" type="text reset" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text">Número (e/ou complemento):</label>
+                              <input name="numero" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md">
+                              <label class="form-text" required>Cidade: </label>
+                              <select class="form-control" name="cidade">
+                                <option>Arujá</option>
+                                <option>Biritiba-Mirim</option>
+                                <option>Ferraz de Vasconcelos</option>
+                                <option>Guararema</option>
+                                <option>Guarulhos</option>
+                                <option>Itaquaquecetuba</option>
+                                <option>Mogi das Cruzes</option>
+                                <option>Poá</option>
+                                <option>Salesópolis</option>
+                                <option>Santa Isabel</option>
+                                <option>Suzano</option>
+                                <option>Outra</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-sm">
+                          <label class="form-text">Tefone</label>
+                          <input type="tel" class="form-control phone-ddd-mask" name="telefone" placeholder="ex: (DDD)0000-0000" required>
+                        </div>
+                        <div class="col-sm">
+                          
+                          <label class="form-text">E-mail</label>
+                          <input type="email" class="form-control" name="email" placeholder="ex: empresa@gmail.com" required>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-sm">
+                          <label class="form-text">Senha: </label>
+                          <input type="password" class="form-control" name="senha" minlength="8" required>
+                        </div>
+                        <div class="col-sm">
+                          <label class="form-text">Confirmar senha: </label>
+                          <input type="password" class="form-control" name="confsenha" minlength="8" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <label class="form-text">Descrição</label>
+                          <textarea class="form-control" name="descricao" maxlength="500"></textarea>
+                        </div>
+                      </div>
+
+                        
+                      </div>
+                    </div>
+                  <div class="modal-footer m-3">
+                    <button type="button" class="btn btn-google reset" data-dismiss="modal" data-toggle="modal" data-target="#modalCad">Voltar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    
+                    </form>
+                  </div>
+</div>
+</div>
+                </div>
+                <!-- 
+                  MODAL PROJETOS
+                -->
+                <div class="modal fade" id="projetos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                       <div class="container-sm">
+                        <label class="form-text">
+                          Preencha para adicionar um projeto: 
+                        </label>
+                        <form action="cadastrarp.php" method="POST">
+                        <input type="text" name="nomeproj" class="form-control mb-1" placeholder="Nome do projeto">
+                        <label class="form-text mb-1">Descrição do projeto: </label>
+                        <textarea class="form-control mt-1 mb-1" name="descproj" maxlength="500" placeholder="Descrição"></textarea>
+                        <label class="form-text mb-1 mt-1">Autor: </label>
+                        <input type="text" name="autor" class="form-control mt-1 mb-1">
+                        <label class="form-text mt-1 mb-1">Telefone do projeto: </label>
+                        <input type="tel" name="telefonep" class="form-control phone-ddd-mask mt-1 mb-1" placeholder="(DDD)0000-0000">
+                        <label class="form-text mb-1 mt-1">Email: </label>
+                        <input type="email" name="emailp" class="form-control mt-1 mb-1">
+                        
+                       </div>
+                      </div>
+                      <div class="modal-footer m-3">
+                        <button type="button" class="btn btn-google" data-dismiss="modal">Voltar</button>
+                        <button type="submit" class="btn btn-primary" >Enviar</button>
+                      </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+        <!--
+          RODAPÉ
+        -->
+        <footer class="container-footer mx-0">
+          <div class="row align-items-center">
+            <div class="col"></div>
+                <div class="col align-items-center m-3">
+                  <a href="https://iconscout.com/illustrations/collaborate" target="_blank">Collaborate Illustration</a> by <a href="https://iconscout.com/contributors/pixel-true-designs">Pixel True</a> on <a href="https://iconscout.com">Iconscout</a>
+                </div>
+            <div class="col"></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col"></div>
+                  <div class="col align-items-center m-3">
+                  <span class="text-monospace"> 
+                    Desenvolvido por TR3S GATINHAX(^･ｪ･^) - 2020
+                  </span>
+                </div>
+                <div class="col"></div>
+              </div>
+              
+              
+
+           <!--
+          BOOTSTRAP LINKS :)
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <!--
+          JAVASCRIPT DO PRE-LOADER
+        -->
+        <script>
+
+          //<![CDATA[
+          $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({'overflow': 'visible'});
+          })
+          //]]>
+          
+          </script>
+      
+        
+      </footer> 
+    </body>
+</html>

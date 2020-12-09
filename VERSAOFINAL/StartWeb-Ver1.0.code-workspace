@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\StartWeb-Ver1.0"
+		},
+		{
+			"path": "..\\..\\..\\..\\rowdies"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "StartWeb-Ver1.0"
+	}
+}
