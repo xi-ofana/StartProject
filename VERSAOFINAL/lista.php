@@ -29,8 +29,8 @@
           </div>
       </div>
       <!--- TODO O HEADER (CABEÇALHO) DA PÁGINA --->
-      <header class="pb-2 mb-2 pb-lg-1 pb-xl-1 mb-lg-1 mb-xl-3 mb-sm-3 pb-sm-5"id="topo">
-              <nav class="navbar fixed-top navbar-expand-lg d-inline-flex " role="navigation">
+      <header id="topo">
+              <nav class="navbar fixed-top navbar-expand-lg d-inline-flex" role="navigation">
                   
                     
                     <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
@@ -66,14 +66,23 @@
                           </li>
                         </button>
                         
-                        <button type="menu" id="button_head" data-toggle="modal" data-target="#projetos">
-                          <li class="nav-item m-1 p-1">
-                            
-                        <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-journals" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
-                          <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-                        </svg><br>
-                        Projetos
+
+                      <button type="menu" id="button_head" data-toggle="modal" data-target="#cad_emp">
+                        <li class="nav-item m-1 p-1">
+                          
+                          <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg" id="icon-sobre">
+                            <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                          </svg><br>
+                          Cadastro
+                        </li>
+                          
+                        </button>
+
+                        <button id="button_head" data-toggle="modal" data-target="#projetos">
+                          <li class="nav-item dropdown m-1 p-1" id="projetos"> 
+                            <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
+                            </svg><br>Projetos
                           </li>
                         </button>
                       
@@ -81,7 +90,7 @@
                   </div>
               </nav>
         
-		</header>
+        </header>
 		
 
 
