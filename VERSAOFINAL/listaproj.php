@@ -88,8 +88,24 @@
 
         <!-- 
 			AQUI VAI O CONTEÚDO
-		-->
-		<div class="row mt-5 pt-5">
+    -->
+    <div class="container-sm pt-5 mt-5">
+      <div class="row-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="col-8">
+                <p class="text-muted m-2">Adicionar projeto </p>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-entrar m-2 p-2" data-toggle="modal" data-target="#projetos">Adicionar</button>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="row mt-1 pt-1">
        
 		</div>
 <?php

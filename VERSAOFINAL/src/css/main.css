@@ -21,12 +21,11 @@
    /* HEADER
 
    */
-
-
     a{
-        color: #378fac;
-        text-align: center;
+        color: whitesmoke;
     }
+
+    
     a:hover{
         color: #89d7ef;
     }
