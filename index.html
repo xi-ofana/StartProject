@@ -3,10 +3,10 @@
       <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+          <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
           
 
-          <link rel="stylesheet" href="../css/main.css">
+          <link rel="stylesheet" href="src/css/main.css">
             <title>
               StartWeb
             </title>
@@ -60,10 +60,14 @@
                          </li>
                         </button>
                         <button onclick="document.location='feed.html'" id="button_head" >
-                          <li class="nav-item m-1 p-1"> 
+                          <li class="nav-item dropdown m-1 p-1" id="projetos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                             <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-file-play-fill" fill="#8ad6ee" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 5.454a.5.5 0 0 0-.757.43z"/>
                             </svg><br>Projetos
+                            <div class="dropdown-menu" arial-labelledby="projetos">
+                              <a class="dropdown-item"> Ver projetos</a>
+                              <a class="dropdown-item"> Adicionar projeto</a>
+                            </div>
                           </li>
                         </button>
                         
